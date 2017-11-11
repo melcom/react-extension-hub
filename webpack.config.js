@@ -33,5 +33,13 @@ module.exports = {
                 loader: "ts-loader"
             }
         ]
+    },
+    devServer: {
+        compress: true,
+        https: true,
+        port: 3000,
+        lazy: false,
+        publicPath: "/dist/",
+        filename:"app.js"
     }
 }
